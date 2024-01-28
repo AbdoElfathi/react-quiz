@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Options({ question, dispatch, answer }) {
+const Options = ({ question, dispatch, answer }) => {
   const hasAnswered = answer !== null;
   return (
     <div className="options">
@@ -22,6 +22,6 @@ function Options({ question, dispatch, answer }) {
       ))}
     </div>
   );
-}
+};
 
 export default Options;
